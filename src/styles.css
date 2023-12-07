@@ -1,0 +1,27 @@
+html,
+body {
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: Arial Black, sans-serif;
+  text-align: center;
+  background: #000;
+  height: 200vh;
+}
+
+#scroll-me {
+  margin-top: 100px;
+  animation: scrollMe 1.2s linear infinite;
+}
+
+@keyframes scrollMe {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-50px);
+    opacity: 0.2;
+  }
+}
